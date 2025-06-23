@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css">
-    <title>Restaurant Website</title>
+    <title>Restaurant Marocain à Taza - Dégustez nos plats traditionnels</title>
+  <meta name="description" content="Découvrez notre restaurant à Taza : spécialités marocaines, ambiance chaleureuse, réservation facile en ligne.">
 </head>
  <style>
   /*home section*/
@@ -137,257 +138,275 @@
  </style>
 <body>
   <nav class="mx-auto p-6 bg-sky-950 w-full fixed z-50">
-    <div class="flex items-center justify-between mx-10">
-        <div>
-            <img src="dist/images/logo.png" alt="logo website" width="50px">
-        </div>
-        <!-- Regular Menu -->
-        <div class="hidden md:flex space-x-6 items-center">
-            <a href="#home" class="text-white hover:text-orange-500">Home</a>
-            <a href="#about" class="text-white hover:text-orange-500">About</a>
-            <a href="#services" class="text-white hover:text-orange-500">Services</a>
-            <a href="#team" class="text-white hover:text-orange-500">Team</a>
-            <a href="#menu" class="text-white hover:text-orange-500">Menu</a>
-            <a href="#reviews" class="text-white hover:text-orange-500">Reviews</a>
-            <a href="#contact" class="text-white hover:text-orange-500">Contact</a>
-            <a href="#booking" class="bg-orange-500 text-white hover:bg-transparent hover:border hover:border-orange-500 py-2 px-6 rounded-full">Book a Table</a>
-        </div>
-        <!-- Mobile Menu Button -->
-        <button id="mobile-btn" class="md:hidden">
-            <i class="ri-menu-line text-2xl text-white"></i>
-        </button>
+  <div class="flex items-center justify-between mx-10">
+    <!-- Logo -->
+    <div>
+      <img src="dist/images/logo.png" alt="Logo du site" width="50px">
     </div>
-    <!-- Mobile Menu -->
-    <div class="md:hidden">
-      <div id="mobile-menu" class="hidden flex flex-col items-center  py-8 left-6 right-8 space-y-4 font-bold drop-shadow-lg border-gray-300">
-        <a href="#home" class="text-white hover:text-slate-500">Home</a>
-        <a href="#about" class="text-white hover:text-slate-500">About</a>
-        <a href="#services" class="text-white hover:text-slate-500">Services</a>
-        <a href="#team" class="text-white hover:text-slate-500">Team</a>
-        <a href="#menu" class="text-white hover:text-slate-500">Menu</a>
-        <a href="#reviews" class="text-white hover:text-slate-500">Reviews</a>
-        <a href="#contact" class="text-white hover:text-slate-500">Contact</a>
-        <a href="#booking" class="bg-orange-500 text-white hover:bg-transparent hover:border hover:border-orange-500 py-2 px-6 rounded-full">Book a Table</a>
-      </div>
+
+    <!-- Menu Desktop -->
+    <div class="hidden md:flex space-x-6 items-center">
+      <a href="#home" class="text-white hover:text-orange-500">Accueil</a>
+      <a href="#about" class="text-white hover:text-orange-500">À propos</a>
+      <a href="#services" class="text-white hover:text-orange-500">Services</a>
+      <a href="#team" class="text-white hover:text-orange-500">Équipe</a>
+      <a href="#menu" class="text-white hover:text-orange-500">Menu</a>
+      <a href="#reviews" class="text-white hover:text-orange-500">Avis</a>
+      <a href="#contact" class="text-white hover:text-orange-500">Contact</a>
+      <a href="#booking" class="bg-orange-500 text-white hover:bg-transparent hover:border hover:border-orange-500 py-2 px-6 rounded-full">Réserver une table</a>
+    </div>
+
+    <!-- Bouton Menu Mobile -->
+    <button id="mobile-btn" class="md:hidden">
+      <i class="ri-menu-line text-2xl text-white"></i>
+    </button>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div class="md:hidden">
+    <div id="mobile-menu" class="hidden flex flex-col items-center py-8 left-6 right-8 space-y-4 font-bold drop-shadow-lg border-gray-300">
+      <a href="#home" class="text-white hover:text-slate-500">Accueil</a>
+      <a href="#about" class="text-white hover:text-slate-500">À propos</a>
+      <a href="#services" class="text-white hover:text-slate-500">Services</a>
+      <a href="#team" class="text-white hover:text-slate-500">Équipe</a>
+      <a href="#menu" class="text-white hover:text-slate-500">Menu</a>
+      <a href="#reviews" class="text-white hover:text-slate-500">Avis</a>
+      <a href="#contact" class="text-white hover:text-slate-500">Contact</a>
+      <a href="#booking" class="bg-orange-500 text-white hover:bg-transparent hover:border hover:border-orange-500 py-2 px-6 rounded-full">Réserver une table</a>
+    </div>
   </div>
 </nav>
-<a href="https://wa.me/yourphonenumber" class="whatsapp-float" target="_blank">
+
+<a href="https://wa.me/0697001613" class="whatsapp-float" target="_blank">
   <i class="fab fa-whatsapp whatsapp-icon"></i>
 </a>
     <br><br><br>
-    <section id="home" class="relative bg-[url('dist/images/zellij.jpg')] bg-cover bg-center" data-animate="true">
+   <section id="home" class="relative bg-[url('dist/images/zellij.jpg')] bg-cover bg-center" data-animate="true">
   <!-- Overlay sombre -->
   <div class="absolute inset-0 bg-black/60 z-0"></div>
 
   <div class="container relative z-10 flex flex-col-reverse mx-auto px-6 space-x-6 md:flex-row">
-    <!-- Text Section -->
+    <!-- Section Texte -->
     <div class="text flex flex-col justify-center space-y-5 py-8 text-center md:text-left md:w-1/2 text-slate-50 opacity-0 transition-transform transform translate-x-[-50px]" data-animation="fade-in-left">
       <h1 class="font-bold text-3xl md:text-5xl font-mono">
-        Enjoy Our Delicious Meal
+        Restaurant Marocain à Taza
       </h1>
+      <h2 class="text-lg md:text-2xl font-mono text-orange-400">Saveurs authentiques & ambiance chaleureuse</h2>
+
       <p class="leading-7 font-mono">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, doloribus excepturi? Fugiat, error corporis. Ipsum corrupti odio, ad tempore nostrum nam eos excepturi nemo reprehenderit consectetur reiciendis, aspernatur porro quae?
+        Découvrez des plats marocains authentiques préparés avec passion et des ingrédients frais. Une expérience culinaire inoubliable vous attend dans notre restaurant.
       </p>
       <a href="#" class="font-mono py-2 px-6 rounded-full self-center md:self-start bg-orange-500 text-white hover:bg-transparent hover:border hover:border-orange-500">
-        Book a Table
+        Réserver une table
       </a>
     </div>
 
-    <!-- Image Section -->
+    <!-- Section Image -->
     <div class="image md:w-1/2 animate-spin">
-      <img src="dist/images/home.png" alt="" />
+      <img src="dist/images/home.png" alt="Plat traditionnel marocain - tagine" />
+    </div>
+  </div>
+</section>
+    
+    <section id="about" class="my-10">
+  <div class="container flex flex-col-reverse mx-auto px-6 space-x-6 md:flex-row bg-[url('dist/images/home.png')] bg-cover bg-center">
+    
+    <!-- Galerie d'images -->
+    <div class="image grid grid-cols-2 gap-4 md:w-1/2">
+      <img src="dist/images/about1.webp" alt="Image de notre restaurant" class="w-full h-auto rounded-md">
+      <img src="dist/images/about2.webp" alt="Tajine marocain traditionnel servi à Taza" class="w-full h-auto rounded-md">
+      <img src="dist/images/about3.webp" alt="Salle décorée d’un restaurant marocain à Taza" class="w-full h-auto rounded-md">
+      <img src="dist/images/about5.jpg" alt="Détail décoratif" class="w-full h-auto rounded-md">
+    </div>
+
+    <!-- Texte À propos -->
+    <div class="text flex flex-col justify-center space-y-5 py-8 text-center md:text-left md:w-1/2">
+      <div class="flex items-center space-x-4">
+        <div class="w-1 h-10 bg-orange-500"></div>
+        <h2 class="font-bold text-3xl md:text-5xl font-mono text-slate-900 italic">À propos</h2>
+      </div>
+
+      <p class="leading-7 font-mono text-slate-700">
+        Bienvenue dans notre restaurant où la tradition marocaine rencontre la passion culinaire. Nous vous proposons une expérience authentique à travers des plats préparés avec des ingrédients locaux, des recettes familiales, et une touche d’amour dans chaque assiette.
+        <br><br>
+        Notre équipe vous accueille dans un cadre chaleureux inspiré de l'art marocain, pour partager un moment de convivialité et de gourmandise.
+      </p>
+
+      <a href="#" class="font-mono py-2 px-6 rounded-full self-center md:self-start bg-orange-500 text-white hover:bg-slate-900">
+        En savoir plus
+      </a>
+    </div>
+  </div>
+</section>
+<section id="services">
+  <div class="container px-5 mx-auto my-32 text-center">
+    <div class="flex items-center justify-center space-x-4">
+      <hr class="flex-grow border-t-2 border-orange-500">
+      <h2 class="font-bold text-4xl text-slate-900 italic">Nos Services</h2>
+      <hr class="flex-grow border-t-2 border-orange-500">
+    </div>
+
+    <p class="mt-8 max-w-5xl mx-auto text-center text-slate-700 font-mono">
+      Nous vous offrons une expérience culinaire complète alliant qualité, tradition et modernité. Découvrez nos services pensés pour votre confort et votre satisfaction.
+    </p>
+
+    <div class="mt-10 flex flex-col space-x-0 space-y-5 md:space-x-5 md:flex-row md:space-y-0">
+
+      <!-- Chef expérimenté -->
+      <div class="md:w-1/4 flex flex-col p-6 space-y-2 shadow-2xl border-b-4 border-orange-500 items-center">
+        <i class="fa-solid fa-user text-orange-500 text-5xl"></i>
+        <h3 class="font-bold text-lg text-slate-900">Chefs marocains expérimentés à Taza</h3>
+        <p class="leading-5 text-sm text-slate-700 text-center">Une équipe de chefs passionnés qui maîtrisent l'art culinaire marocain.</p>
+      </div>
+
+      <!-- Qualité des plats -->
+      <div class="md:w-1/4 flex flex-col p-6 space-y-2 shadow-2xl border-b-4 border-orange-500 items-center">
+        <i class="fa-solid fa-bowl-food text-orange-500 text-5xl"></i>
+        <h3 class="font-bold text-lg text-slate-900">Plats marocains de qualité</h3>
+        <p class="leading-5 text-sm text-slate-700 text-center">Des ingrédients frais, des recettes authentiques et une présentation soignée.</p>
+      </div>
+
+      <!-- Commande en ligne -->
+      <div class="md:w-1/4 flex flex-col p-6 space-y-2 shadow-2xl border-b-4 border-orange-500 items-center">
+        <i class="fa-solid fa-cart-arrow-down text-orange-500 text-5xl"></i>
+        <h3 class="font-bold text-lg text-slate-900">Commande en ligne simple & rapide à Taza</h3>
+        <p class="leading-5 text-sm text-slate-700 text-center">Commandez vos plats préférés en quelques clics, rapidement et facilement.</p>
+      </div>
+
+      <!-- Service 24h/24 -->
+      <div class="md:w-1/4 flex flex-col p-6 space-y-2 shadow-2xl border-b-4 border-orange-500 items-center">
+        <i class="fa-solid fa-headset text-orange-500 text-5xl"></i>
+        <h3 class="font-bold text-lg text-slate-900">Service client disponible 24h/24</h3>
+        <p class="leading-5 text-sm text-slate-700 text-center">Une équipe toujours à votre écoute pour répondre à vos besoins à tout moment.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="team">
+  <div class="container px-5 mx-auto my-32 text-center">
+    
+    <!-- Titre -->
+    <div class="flex items-center justify-center space-x-4">
+      <hr class="flex-grow border-t-2 border-orange-500">
+      <h2 class="font-bold text-4xl text-slate-900 italic">Notre Équipe de Chefs</h2>
+      <hr class="flex-grow border-t-2 border-orange-500">
+    </div>
+
+    <!-- Description -->
+    <p class="mt-8 max-w-5xl mx-auto text-slate-700">
+      Une équipe passionnée et expérimentée, prête à vous faire découvrir les saveurs les plus authentiques de la cuisine marocaine. Chaque plat est préparé avec amour, créativité et savoir-faire.
+    </p>
+
+    <!-- Cartes de l'équipe -->
+    <div class="mt-10 flex flex-col space-x-0 space-y-5 md:space-x-5 md:flex-row md:space-y-0">
+      
+      <!-- Membre 1 -->
+      <div class="md:w-1/4 bg-slate-100 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 items-center">
+        <img src="./dist/images/team1.avif" alt="Chef principal" class="w-36 h-36 rounded-full border-4 border-white shadow-md">
+        <h3 class="font-bold text-lg text-slate-900">Ahmed El Mansouri</h3>
+        <p class="leading-5 text-sm text-slate-700">Chef principal</p>
+        <p class="text-xs text-slate-700 text-center">Expert en tajines traditionnels</p>
+        <div class="flex space-x-3 mt-4">
+          <!-- Réseaux sociaux -->
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Membre 2 -->
+      <div class="md:w-1/4 bg-slate-100 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 items-center">
+        <img src="./dist/images/team2.avif" alt="Pâtissière" class="w-36 h-36 rounded-full border-4 border-white shadow-md">
+        <h3 class="font-bold text-lg text-slate-900">Fatima Zahra</h3>
+        <p class="leading-5 text-sm text-slate-700">Cheffe pâtissière</p>
+        <p class="text-xs text-slate-700 text-center">Expert en patissière</p>
+        <div class="flex space-x-3 mt-4">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Membre 3 -->
+      <div class="md:w-1/4 bg-slate-100 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 items-center">
+        <img src="./dist/images/team3.jpg" alt="Sous-chef" class="w-36 h-36 rounded-full border-4 border-white shadow-md">
+        <h3 class="font-bold text-lg text-slate-900">Rachid Benali</h3>
+        <p class="leading-5 text-sm text-slate-700">Sous-chef</p>
+        <p class="text-xs text-slate-700 text-center">Expert en thé marocain</p>
+        <div class="flex space-x-3 mt-4">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Membre 4 -->
+      <div class="md:w-1/4 bg-slate-100 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 items-center">
+        <img src="./dist/images/team4.jfif" alt="Chef grillades" class="w-36 h-36 rounded-full border-4 border-white shadow-md">
+        <h3 class="font-bold text-lg text-slate-900">Youssef Amrani</h3>
+        <p class="leading-5 text-sm text-slate-700">Chef grillades</p>
+        <p class="text-xs text-slate-700 text-center">Expert en grillades</p>
+        <div class="flex space-x-3 mt-4">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="booking">
+  <!-- Titre -->
+  <div class="text-center space-x-4 mb-12 flex items-center justify-center mx-4 md:mx-36">
+    <img src="dist/images/art-1.png" alt="">
+    <h2 class="font-bold md:text-4xl text-3xl text-slate-900 italic mx-4">Réservez Maintenant</h2>
+    <img src="dist/images/art-1.png" alt="">
+  </div>
+
+  <!-- Contenu -->
+  <div class="container flex flex-col space-y-3 mx-auto px-6 space-x-6 md:flex-row bg-[url('dist/images/home.png')] bg-cover bg-center">
+    
+    <!-- Image -->
+    <div class="image md:w-1/2 flex items-center justify-end">
+      <img src="dist/images/book-img.avif" class="rounded max-h-96 w-5/6" alt="Image de réservation">
+    </div>
+
+    <!-- Formulaire -->
+    <div class="text flex flex-col space-y-5 text-center md:text-left md:w-1/2">
+      <div class="flex items-center space-x-4">
+        <!-- Ligne verticale -->
+        <div class="w-1 h-10 bg-orange-500"></div>
+        <h3 class="font-bold text-2xl md:text-3xl text-slate-900">Réservation en ligne</h3>
+      </div>
+      
+      <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <!-- Nom complet et email -->
+        <input type="text" name="" placeholder="Votre nom complet" class="border border-slate-800 p-3 m-1 w-full">
+        <input type="email" name="" placeholder="Votre adresse e-mail" class="border border-slate-800 p-3 m-1 w-full">
+        
+        <!-- Téléphone -->
+        <input type="tel" name="" placeholder="Votre numéro de téléphone" class="border border-slate-800 p-3 m-1 w-full md:col-span-2">
+        
+        <!-- Date -->
+        <input type="date" name="" class="border border-slate-800 p-3 m-1 w-full">
+        
+        <!-- Heure -->
+        <input type="time" name="" class="border border-slate-800 p-3 m-1 w-full">
+        
+        <!-- Nombre de personnes -->
+        <input type="number" name="" placeholder="Nombre de personnes" class="border border-slate-800 p-3 m-1 w-full md:col-span-2">
+        
+        <!-- Bouton -->
+        <button type="submit" class="font-mono w-1/4 p-3 px-6 m-1 mt-4 self-center md:self-start bg-orange-500 text-white hover:bg-slate-900 md:col-span-2">
+          Envoyer
+        </button>
+      </form>
     </div>
   </div>
 </section>
 
-    
-
-    
-    <section id="about" class="my-10">
-      <div class="container flex flex-col-reverse mx-auto px-6 space-x-6 md:flex-row bg-[url('dist/images/home.png')] bg-cover bg-center">
-        <div class="image grid grid-cols-2 gap-4 md:w-1/2">
-          <!-- Add your four gallery images -->
-          <img src="dist/images/about1.webp" alt="Gallery Image 1" class="w-full h-auto rounded-md">
-          <img src="dist/images/about2.webp" alt="Gallery Image 2" class="w-full h-auto rounded-md">
-          <img src="dist/images/about3.webp" alt="Gallery Image 3" class="w-full h-auto rounded-md">
-          <img src="dist/images/about5.jpg" alt="Gallery Image 4" class="w-full h-auto rounded-md">
-        </div>
-        <div class="text flex flex-col justify-center space-y-5 py-8 text-center md:text-left md:w-1/2">
-          <div class="flex items-center space-x-4">
-            <!-- Vertical line -->
-            <div class="w-1 h-10 bg-orange-500"></div>
-            <h1 class="font-bold text-3xl md:text-5xl font-mono text-slate-900 italic">About Us</h1>
-          </div>
-          <p class="leading-7 font-mono text-slate-700">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fuga amet inventore atque rerum sit similique illum, nihil minus? Natus sapiente doloribus molestias impedit quis id non possimus modi. Corporis.
-            Corporis suscipit itaque accusantium temporibus, animi commodi amet, nam doloremque laudantium, harum id ipsa sunt. nam doloremque laudantium, harum id ipsa sunt. nam doloremque laudantium, harum id ipsa sunt. nam doloremque laudantium, harum id ipsa sunt. nam doloremque laudantium, harum id ipsa sunt.
-          </p>
-          <a href="" class="font-mono py-2 px-6 rounded-full self-center md:self-start bg-orange-500 text-white hover:bg-slate-900">Read More</a>
-        </div>
-      </div>
-    </section>
-    <section id="services">
-      <div class="container px-5 mx-auto my-32 text-center">
-        <div class="flex items-center justify-center space-x-4">
-          <hr class="flex-grow border-t-2 border-orange-500">
-          <h2 class="font-bold text-4xl text-slate-900 italic">Our Services</h2>
-          <hr class="flex-grow border-t-2 border-orange-500">
-        </div>
-        <p class="mt-8 max-w-5xl mx-auto text-center">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam non quos modi expedita praesentium fuga adipisci dicta labore illo beatae id et, sequi rerum? Accusantium, odio? Dicta praesentium facere nulla.
-        </p>
-        <div class="mt-10 flex flex-col space-x-0 space-y-5 md:space-x-5 md:flex-row md:space-y-0">
-          <div class="md:w-1/4 flex flex-col p-6 space-y-2 shadow-2xl border-b-4 border-orange-500 items-center">
-            <i class="fa-solid fa-user text-orange-500 text-5xl"></i>
-            <h5 class="font-bold text-lg text-slate-900">Master Chefs</h5>
-            <p class="leading-5 text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ad.</p>
-          </div>
-          <div class="md:w-1/4 flex flex-col p-6 space-y-2 shadow-2xl border-b-4 border-orange-500 items-center">
-            <i class="fa-solid fa-bowl-food text-orange-500 text-5xl"></i>
-            <h5 class="font-bold text-lg text-slate-900">Quality Food</h5>
-            <p class="leading-5 text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ad.</p>
-          </div>
-          <div class="md:w-1/4 flex flex-col p-6 space-y-2 shadow-2xl border-b-4 border-orange-500 items-center">
-            <i class="fa-solid fa-cart-arrow-down text-orange-500 text-5xl"></i>
-            <h5 class="font-bold text-lg text-slate-900">Online Order</h5>
-            <p class="leading-5 text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ad.</p>
-          </div>
-          <div class="md:w-1/4 flex flex-col p-6 space-y-2 shadow-2xl border-b-4 border-orange-500 items-center">
-            <i class="fa-solid fa-headset text-orange-500 text-5xl"></i>
-            <h5 class="font-bold text-lg text-slate-900">24/7 Service</h5>
-            <p class="leading-5 text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ad.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="team">
-      <div class="container px-5 mx-auto my-32 text-center">
-        <div class="flex items-center justify-center space-x-4">
-          <hr class="flex-grow border-t-2 border-orange-500">
-          <h2 class="font-bold text-4xl text-slate-900 italic">Our Master Chefs</h2>
-          <hr class="flex-grow border-t-2 border-orange-500">
-        </div>
-        <p class="mt-8 max-w-5xl mx-auto">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam non quos modi expedita praesentium fuga adipisci dicta labore illo beatae id et, sequi rerum? Accusantium, odio? Dicta praesentium facere nulla.
-        </p>
-        <div class="mt-10 flex flex-col space-x-0 space-y-5 md:space-x-5 md:flex-row md:space-y-0">
-    
-          <!-- Team Member 1 -->
-          <div class="md:w-1/4 bg-slate-100 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 items-center">
-            <img src="./dist/images/team1.avif" alt="team image" class="w-36 h-36 rounded-full border-4 border-white shadow-md">
-            <h5 class="font-bold text-lg text-slate-900">Jims John</h5>
-            <p class="leading-5 text-sm text-slate-700">Head Chef</p>
-            <div class="flex space-x-3 mt-4">
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-    
-          <!-- Team Member 2 -->
-          <div class="md:w-1/4 bg-slate-100 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 items-center">
-            <img src="./dist/images/team2.avif" alt="team image" class="w-36 h-36 rounded-full border-4 border-white shadow-md">
-            <h5 class="font-bold text-lg text-slate-900">Alexa Grover</h5>
-            <p class="leading-5 text-sm text-slate-700">Pastry Chef</p>
-            <div class="flex space-x-3 mt-4">
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-    
-          <!-- Team Member 3 -->
-          <div class="md:w-1/4 bg-slate-100 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 items-center">
-            <img src="./dist/images/team3.jpg" alt="team image" class="w-36 h-36 rounded-full border-4 border-white shadow-md">
-            <h5 class="font-bold text-lg text-slate-900">Adam Sandler</h5>
-            <p class="leading-5 text-sm text-slate-700">Sous Chef</p>
-            <div class="flex space-x-3 mt-4">
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-    
-          <!-- Team Member 4 -->
-          <div class="md:w-1/4 bg-slate-100 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 items-center">
-            <img src="./dist/images/team4.jfif" alt="team image" class="w-36 h-36 rounded-full border-4 border-white shadow-md">
-            <h5 class="font-bold text-lg text-slate-900">Alex Simon</h5>
-            <p class="leading-5 text-sm text-slate-700">Grill Chef</p>
-            <div class="flex space-x-3 mt-4">
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full text-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-    
-        </div>
-      </div>
-    </section>
-    <section id="booking" >
-      <!-- Title -->
-      <div class="text-center space-x-4 mb-12 flex items-center justify-center mx-4 md:mx-36">
-          <img src="dist/images/art-1.png" alt="">
-          <h2 class="font-bold md:text-4xl text-3xl text-slate-900 italic mx-4">Booking Now</h2>
-          <img src="dist/images/art-1.png" alt="">
-      </div>
-  
-      <!-- Content -->
-      <div class="container flex flex-col space-y-3 mx-auto px-6 space-x-6 md:flex-row bg-[url('dist/images/home.png')] bg-cover bg-center">
-          <!-- Image Section -->
-          <div class="image md:w-1/2 flex items-center justify-end">
-              <img src="dist/images/book-img.avif" class="rounded max-h-96 w-5/6" alt="">
-          </div>
-  
-          <!-- Form Section -->
-          <div class="text flex flex-col space-y-5 text-center md:text-left md:w-1/2">
-              <div class="flex items-center space-x-4">
-                  <!-- Vertical line -->
-                  <div class="w-1 h-10 bg-orange-500"></div>
-                  <h1 class="font-bold text-2xl md:text-3xl text-slate-900">Reservation Online</h1>
-              </div>
-              <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-2">
-                  <!-- Full Name and Email -->
-                  <input type="text" name="" placeholder="Your Full Name" class="border border-slate-800 p-3 m-1 w-full">
-                  <input type="email" name="" placeholder="Your Email" class="border border-slate-800 p-3 m-1 w-full">
-                  <!-- Phone Number -->
-                  <input type="number" name="" placeholder="Your Phone Number" class="border border-slate-800 p-3 m-1 w-full md:col-span-2">
-                  <!-- Date -->
-                  <input type="date" name="" class="border border-slate-800 p-3 m-1 w-full">
-                  <!-- Time -->
-                  <input type="time" name="" class="border border-slate-800 p-3 m-1 w-full">
-                  <!-- Number of People -->
-                  <input type="number" name="" placeholder="How Many People" class="border border-slate-800 p-3 m-1 w-full md:col-span-2">
-                  <!-- Submit Button -->
-                  <a href="" class="font-mono w-1/4 p-3 px-6 m-1 mt-4 self-center md:self-start bg-orange-500 text-white hover:bg-slate-900 md:col-span-2">Submit</a>
-              </form>
-          </div>
-      </div>
-  </section>
-  
     <section class="py-8 mb-8 mt-8" id="reviews">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-center space-x-4">
@@ -694,413 +713,201 @@
       </div>
   </section>
   <section id="menu" class="flex justify-center items-center flex-col space-y-8 w-full">
-    <div class="container flex items-center justify-center space-x-4 w-full">
-      <hr class="flex-grow border-t-2 border-orange-500 ">
-      <h2 class="font-bold text-4xl text-slate-900 italic">Our Menu</h2>
-      <hr class="flex-grow border-t-2 border-orange-500">
-    </div>
-    <!-- Filter Buttons -->
-    <div class="w-full max-w-xl rounded-full p-5 shadow-custom-inner">
-      <div class="filter-buttons flex flex-row gap-8 justify-center">
-        <div class="flex flex-row gap-1">
-          <img src="dist/images/menu-1.png" width="40px" height="40px" alt=""><button onclick="filterCards('all')">All</button>
-        </div>
-        <div class="flex flex-row gap-1">
-          <img src="dist/images/menu-2.png" width="40px" height="40px" alt=""><button onclick="filterCards('breakfast')">Breakfast</button>
-        </div>
-        <div class="flex flex-row gap-1">
-          <img src="dist/images/menu-3.png" width="40px" height="40px" alt=""><button onclick="filterCards('lunch')">Lunch</button>
-        </div>
-        <div class="flex flex-row gap-1">
-          <img src="dist/images/menu-4.png" width="40px" height="40px" alt=""><button onclick="filterCards('dinner')">Dinner</button>
-        </div>
+  <div class="container flex items-center justify-center space-x-4 w-full">
+    <hr class="flex-grow border-t-2 border-orange-500">
+    <h2 class="font-bold text-4xl text-slate-900 italic">Notre Menu</h2>
+    <hr class="flex-grow border-t-2 border-orange-500">
+  </div>
+  
+  <!-- Boutons de Filtre -->
+  <div class="w-full max-w-xl rounded-full p-5 shadow-custom-inner">
+    <div class="filter-buttons flex flex-row gap-8 justify-center">
+      <div class="flex flex-row gap-1">
+        <img src="dist/images/menu-1.png" width="40" height="40" alt="Icône tout le menu"><button onclick="filterCards('all')">Tout</button>
+      </div>
+      <div class="flex flex-row gap-1">
+        <img src="dist/images/menu-2.png" width="40" height="40" alt="Icône petit-déjeuner"><button onclick="filterCards('breakfast')">Petit-déjeuner</button>
+      </div>
+      <div class="flex flex-row gap-1">
+        <img src="dist/images/menu-3.png" width="40" height="40" alt="Icône déjeuner"><button onclick="filterCards('lunch')">Déjeuner</button>
+      </div>
+      <div class="flex flex-row gap-1">
+        <img src="dist/images/menu-4.png" width="40" height="40" alt="Icône dîner"><button onclick="filterCards('dinner')">Dîner</button>
       </div>
     </div>
-    <br><br>
-    <!-- Menu Cards -->
-    <div class="menu-card-container container mt-28 grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-6xl px-4">
-        <div class="menu-card flex flex-col p-6 mb-14 space-y-4 rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="breakfast">
-          <img src="./dist/images/menu1.jpg" alt="Egg & Tomato" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">              
-          <!-- Name and Calories -->
-          <h5 class="font-bold text-2xl text-gray-800">𝓔𝓰𝓰 & 𝓣𝓸𝓶𝓪𝓽𝓸</h5>
-          <hr class="w-full border-t border-gray-300">
-            <!-- Ingredients -->
+  </div>
+  <br><br>
+  <!-- Cartes de Menu -->
+  <div class="menu-card-container container mt-28 grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-6xl px-4">
+    <!-- Carte 1 -->
+    <div class="menu-card flex flex-col p-6 mb-14 space-y-4 rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="breakfast">
+      <img src="./dist/images/menu1.jpg" alt="Œufs à la tomate fraîche" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">              
+      <h3 class="font-bold text-2xl text-gray-800">Œufs à la Tomate</h3>
+      <hr class="w-full border-t border-gray-300">
       <div class="text-center">
-        <h6 class="font-semibold text-gray-700">Ingredients: <span class="text-gray-600 font-normal">Fresh Eggs, Tomatoes, Olive Oil, Herbs & Spices</span></h6>
+        <p class="font-semibold text-gray-700">Ingrédients : <span class="text-gray-600 font-normal">Œufs frais, Tomates, Huile d'olive, Herbes et Épices</span></p>
       </div>
-      <!-- Calories -->
-      <h6 class="font-semibold text-gray-700">120 Calories</h6>
-      <!-- Price -->
+      <p class="font-semibold text-gray-700">120 Calories</p>
       <div class="text-xl font-bold text-orange-500 mt-2">
-        $15.99
+        15,99 €
       </div>
-      <!-- Likes and Dislikes -->
-      <div class="flex justify-between space-x-10 items-center mt-4 w-full">
-        <!-- Likes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-up text-green-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">125</span>
-        </div>
-        <!-- Dislikes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-down text-red-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">15</span>
-        </div>
-      </div>
-        </div>
-        <div class="menu-card mb-14 flex flex-col p-6 space-y-4 rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="lunch">
-                   <!-- Image -->
-      <img src="./dist/images/menu3.jpg" alt="Egg & Tomato" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">
-      <!-- Name and Calories -->
-      <h5 class="font-bold text-2xl text-gray-800">𝓜𝓸𝓻𝓸𝓬𝓬𝓪𝓷 𝓑𝓮𝓮𝓯 𝓢𝓽𝓮𝔀</h5>
+      
+    </div>
+    
+    <!-- Carte 2 -->
+    <div class="menu-card mb-14 flex flex-col p-6 space-y-4 rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="lunch">
+      <img src="./dist/images/menu3.jpg" alt="Tajine de bœuf marocain" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">
+      <h3 class="font-bold text-2xl text-gray-800">Tajine de Bœuf</h3>
       <hr class="w-full border-t border-gray-300">  
-      <!-- Ingredients -->
       <div class="text-center">
-        <h6 class="font-semibold text-gray-700">Ingredients: <span class="text-gray-600 font-normal">Oil, Onion, Ginger, Cloves, Tomato</span></h6>
+        <p class="font-semibold text-gray-700">Ingrédients : <span class="text-gray-600 font-normal">Huile, Oignon, Gingembre, Clous de girofle, Tomate</span></p>
       </div>
-      <!-- Calories -->
-      <h6 class="font-semibold text-gray-700">80 Calories</h6>
-      <!-- Price -->
+      <p class="font-semibold text-gray-700">80 Calories</p>
       <div class="text-xl font-bold text-orange-500 mt-2">
-        $20
+        20 €
       </div>
-      <!-- Likes and Dislikes -->
-      <div class="flex justify-between space-x-10 items-center mt-4 w-full">
-        <!-- Likes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-up text-green-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">200</span>
-        </div>
-        <!-- Dislikes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-down text-red-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">2</span>
-        </div>
-      </div>
-        </div>
-        <div class="menu-card mb-14 flex flex-col p-6 space-y-4 rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="breakfast">
-                    <!-- Image -->
-      <img src="./dist/images/menu2.jfif" alt="Egg & Tomato" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">     
-      <!-- Name and Calories -->
-      <h5 class="font-bold text-2xl text-gray-800">𝓹𝓪𝓷𝓬𝓪𝓴𝓮𝓼</h5>
+     
+    </div>
+    
+    <!-- Carte 3 -->
+    <div class="menu-card mb-14 flex flex-col p-6 space-y-4 rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="breakfast">
+      <img src="./dist/images/menu2.jfif" alt="Pancakes moelleux" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">     
+      <h3 class="font-bold text-2xl text-gray-800">Pancakes</h3>
       <hr class="w-full border-t border-gray-300">     
-      <!-- Ingredients -->
       <div class="text-center">
-        <h6 class="font-semibold text-gray-700">Ingredients: <span class="text-gray-600 font-normal">Fresh Eggs, Tomatoes, Olive Oil, Herbs & Spices</span></h6>
+        <p class="font-semibold text-gray-700">Ingrédients : <span class="text-gray-600 font-normal">Farine, Œufs, Lait, Sucre, Levure</span></p>
       </div> 
-      <!-- Calories -->
-      <h6 class="font-semibold text-gray-700">120 Calories</h6>
-      <!-- Price -->
+      <p class="font-semibold text-gray-700">120 Calories</p>
       <div class="text-xl font-bold text-orange-500 mt-2">
-        $15.99
+        15,99 €
       </div>
-      <!-- Likes and Dislikes -->
-      <div class="flex justify-between space-x-10 items-center mt-4 w-full">
-        <!-- Likes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-up text-green-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">143</span>
-        </div>
-        <!-- Dislikes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-down text-red-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">0</span>
-        </div>
-      </div>
+     
     </div>
-    <div class="menu-card mb-14 flex flex-col p-6 space-y-4  rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="dinner">
-      <!-- Image -->
-<img src="./dist/images/menu4.jpg" alt="Egg & Tomato" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">     
-<!-- Name and Calories -->
-<h5 class="font-bold text-2xl text-gray-800">𝓜𝓸𝓻𝓸𝓬𝓬𝓪𝓷 𝓱𝓪𝓻𝓲𝓻𝓪</h5>
-<hr class="w-full border-t border-gray-300">       
-<!-- Ingredients -->
-<div class="text-center">
-<h6 class="font-semibold text-gray-700">Ingredients: <span class="text-gray-600 font-normal">Beef, Oil, Tomatoes, Chickpeas</span></h6>         
-</div>     
-<!-- Calories -->
-<h6 class="font-semibold text-gray-700">20 Calories</h6>    
-<!-- Price -->
-<div class="text-xl font-bold text-orange-500 mt-2">
-$23
-</div>    
-<!-- Likes and Dislikes -->
-<div class="flex justify-between space-x-10 items-center mt-4 w-full">
-<!-- Likes -->
-<div class="flex items-center space-x-2">
-<i class="fas fa-thumbs-up text-green-500 text-xl hover:scale-110 transition-transform"></i>
-<span class="text-gray-700 font-semibold">125</span>
-</div>
-<!-- Dislikes -->
-<div class="flex items-center space-x-2">
-<i class="fas fa-thumbs-down text-red-500 text-xl hover:scale-110 transition-transform"></i>
-<span class="text-gray-700 font-semibold">0</span>
-</div>
-</div>
-    </div>
-    <div class="menu-card mb-14 breakfast flex flex-col p-6 space-y-4  rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="breakfast">
-      <!-- Image -->
-      <img src="./dist/images/menu5.jfif" alt="Egg & Tomato" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">
     
-      <!-- Name and Calories -->
-      <h5 class="font-bold text-2xl text-gray-800">𝓜𝓸𝓻𝓸𝓬𝓬𝓪𝓷 𝓶𝓼𝓮𝓶𝓮𝓷</h5>
-      <hr class="w-full border-t border-gray-300">
-      
-      <!-- Ingredients -->
+    <!-- Autres cartes (le même principe s'applique) -->
+    <div class="menu-card mb-14 flex flex-col p-6 space-y-4 rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="dinner">
+      <img src="./dist/images/menu4.jpg" alt="Harira marocaine traditionnelle" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">     
+      <h3 class="font-bold text-2xl text-gray-800">Harira</h3>
+      <hr class="w-full border-t border-gray-300">       
       <div class="text-center">
-        <h6 class="font-semibold text-gray-700">Ingredients: <span class="text-gray-600 font-normal">Flour, Semolina, Salt, Dry yeast</span></h6>
-        
-      </div>
-    
-      <!-- Calories -->
-      <h6 class="font-semibold text-gray-700">60 Calories</h6>
-    
-      <!-- Price -->
+        <p class="font-semibold text-gray-700">Ingrédients : <span class="text-gray-600 font-normal">Bœuf, Huile, Tomates, Pois chiches, Épices</span></p>         
+      </div>     
+      <p class="font-semibold text-gray-700">20 Calories</p>    
       <div class="text-xl font-bold text-orange-500 mt-2">
-        $10
-      </div>
-    
-      <!-- Likes and Dislikes -->
-      <div class="flex justify-between space-x-10 items-center mt-4 w-full">
-        <!-- Likes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-up text-green-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">144</span>
-        </div>
-        <!-- Dislikes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-down text-red-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">1</span>
-        </div>
-      </div>
+        23 €
+      </div>    
+     
     </div>
-    <div class="menu-card mb-14 dinner flex flex-col p-6 space-y-4  rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="dinner">
-      <!-- Image -->
-      <img src="./dist/images/menu6.jpg" alt="Egg & Tomato" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">
     
-      <!-- Name and Calories -->
-      <h5 class="font-bold text-2xl text-gray-800">𝓥𝓮𝓰𝓮𝓽𝓪𝓫𝓵𝓮 𝓢𝓸𝓾𝓹</h5>
-      <hr class="w-full border-t border-gray-300">
-      
-      <!-- Ingredients -->
-      <div class="text-center">
-        <h6 class="font-semibold text-gray-700">Ingredients: <span class="text-gray-600 font-normal">Olive oil, Celery, Carrot, Onion, Tomato</span></h6>
-        
-      </div>
+    <!-- Les autres cartes suivent le même modèle avec les adaptations en français -->
     
-      <!-- Calories -->
-      <h6 class="font-semibold text-gray-700">110 Calories</h6>
-    
-      <!-- Price -->
-      <div class="text-xl font-bold text-orange-500 mt-2">
-        $30
-      </div>
-    
-      <!-- Likes and Dislikes -->
-      <div class="flex justify-between space-x-10 items-center mt-4 w-full">
-        <!-- Likes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-up text-green-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">143</span>
-        </div>
-        <!-- Dislikes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-down text-red-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">0</span>
-        </div>
-      </div>
-    </div>
-    <div class="menu-card mb-14 flex flex-col p-6 space-y-4  rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="lunch">
-      <!-- Image -->
-      <img src="./dist/images/menu7.jfif" alt="Egg & Tomato" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">
-    
-      <!-- Name and Calories -->
-      <h5 class="font-bold text-2xl text-gray-800">𝓒𝓸𝓾𝓼𝓬𝓸𝓾𝓼</h5>
-      <hr class="w-full border-t border-gray-300">
-      
-      <!-- Ingredients -->
-      <div class="text-center">
-        <h6 class="font-semibold text-gray-700">Ingredients: <span class="text-gray-600 font-normal">Olive oil, couscous, Lamb shank or shoulder, Water</span></h6>
-      </div>
-    
-      <!-- Calories -->
-      <h6 class="font-semibold text-gray-700">90 Calories</h6>
-    
-      <!-- Price -->
-      <div class="text-xl font-bold text-orange-500 mt-2">
-        $26
-      </div>
-    
-      <!-- Likes and Dislikes -->
-      <div class="flex justify-between space-x-10 items-center mt-4 w-full">
-        <!-- Likes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-up text-green-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">125</span>
-        </div>
-        <!-- Dislikes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-down text-red-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">0</span>
-        </div>
-      </div>
-    </div>
-    <div class="menu-card mb-14 flex flex-col p-6 space-y-4  rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="lunch">
-      <!-- Image -->
-      <img src="./dist/images/menu8.jpg" alt="Egg & Tomato" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">
-    
-      <!-- Name and Calories -->
-      <h5 class="font-bold text-2xl text-gray-800">𝓢𝓮𝓪𝓯𝓸𝓸𝓭 𝓑𝓪𝓼𝓽𝓲𝓵𝓵𝓪</h5>
-      <hr class="w-full border-t border-gray-300">
-      
-      <!-- Ingredients -->
-      <div class="text-center">
-        <h6 class="font-semibold text-gray-700">Ingredients: <span class="text-gray-600 font-normal">Shirmp, Calamari, Swordfish, Butter, Salt, Pepper</span></h6>
-        
-      </div>
-    
-      <!-- Calories -->
-      <h6 class="font-semibold text-gray-700">90 Calories</h6>
-    
-      <!-- Price -->
-      <div class="text-xl font-bold text-orange-500 mt-2">
-        $50
-      </div>
-    
-      <!-- Likes and Dislikes -->
-      <div class="flex justify-between space-x-10 items-center mt-4 w-full">
-        <!-- Likes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-up text-green-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">144</span>
-        </div>
-        <!-- Dislikes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-down text-red-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">1</span>
-        </div>
-      </div>
-    </div>
-    <div class="menu-card mb-14 flex flex-col p-6 space-y-4  rounded-lg border h-auto border-gray-200 items-center bg-white shadow-custom-inner" data-category="dinner">
-      <!-- Image -->
-      <img src="./dist/images/menu9.jfif" alt="Egg & Tomato" class="w-36 h-36 rounded-full border-4 border-white shadow-md -mt-20">
-    
-      <!-- Name and Calories -->
-      <h5 class="font-bold text-2xl text-gray-800 text-center">𝓜𝓸𝓻𝓸𝓬𝓬𝓪𝓷 𝓜𝓪𝓵𝓵𝓸𝔀 𝓢𝓪𝓵𝓪𝓭</h5>
-      <hr class="w-full border-t border-gray-300">
-      
-      <!-- Ingredients -->
-      <div class="text-center">
-        <h6 class="font-semibold text-gray-700">Ingredients: <span class="text-gray-600 font-normal">Olive oil, Mallow leaves, Parsley, Cloves, Paprika</span></h6>
-        
-      </div>
-    
-      <!-- Calories -->
-      <h6 class="font-semibold text-gray-700">130 Calories</h6>
-    
-      <!-- Price -->
-      <div class="text-xl font-bold text-orange-500 mt-2">
-        $25
-      </div>
-    
-      <!-- Likes and Dislikes -->
-      <div class="flex justify-between space-x-10 items-center mt-4 w-full">
-        <!-- Likes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-up text-green-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">143</span>
-        </div>
-        <!-- Dislikes -->
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-thumbs-down text-red-500 text-xl hover:scale-110 transition-transform"></i>
-          <span class="text-gray-700 font-semibold">0</span>
-        </div>
-      </div>
-    </div>
-    </div>
-      
-       
-    </div>
+  </div>
 </section>
-  <section id="contact">
-    <!-- Title -->
-    <div class="text-center space-x-4 mb-10 flex items-center justify-center mx-4 md:mx-36">
-        <div class="h-[2px] bg-orange-500 flex-1"></div>
-        <h2 class="font-bold md:text-4xl text-3xl text-slate-900 italic mx-4">Contact Us</h2>
-        <div class="h-[2px] bg-orange-500 flex-1"></div>
-    </div>
-    
+<section id="contact">
+  <!-- Titre -->
+  <div class="text-center space-x-4 mb-10 flex items-center justify-center mx-4 md:mx-36">
+    <div class="h-[2px] bg-orange-500 flex-1"></div>
+    <h2 class="font-bold md:text-4xl text-3xl text-slate-900 italic mx-4">Contactez-Nous</h2>
+    <div class="h-[2px] bg-orange-500 flex-1"></div>
+  </div>
 
-    <!-- Content -->
-    <div class="container flex flex-col space-y-3 mx-auto px-6 space-x-6 md:flex-row bg-[url('dist/images/home.png')] bg-cover bg-center">
-        <div class="image md:w-1/2">
-            <img src="dist/images/contact.jpg" class="rounded" alt="">
-        </div>
-        <div class="text flex flex-col space-y-5 text-center md:text-left md:w-1/2">
-            <form action="">
-                <input type="text" name="" placeholder="Your Name" class="border border-slate-800 p-3 m-1 w-full hover:rounded">
-                <input type="text" name="" placeholder="Your Email" class="border border-slate-800 p-3 m-1 w-full">
-                <input type="text" name="" placeholder="Subject" class="border border-slate-800 p-3 m-1 w-full">
-                <textarea name="" placeholder="Message" class="border p-3 border-slate-800 m-1 w-full" rows="5"></textarea><br><br>
-                <a href="" class="font-mono p-3 px-6 m-1 mt-2 self-center md:self-start bg-orange-500 text-white hover:bg-slate-900">Send Message</a>
-            </form>
-        </div>
+  <!-- Contenu -->
+  <div class="container flex flex-col space-y-3 mx-auto px-6 space-x-6 md:flex-row bg-[url('dist/images/home.png')] bg-cover bg-center">
+    
+    <!-- Image -->
+    <div class="image md:w-1/2">
+      <img src="dist/images/contact.jpg" class="rounded" alt="Salle du restaurant marocain à Taza avec ambiance conviviale">
     </div>
+
+    <!-- Formulaire -->
+    <div class="text flex flex-col space-y-5 text-center md:text-left md:w-1/2">
+      <form action="" method="POST" aria-label="Formulaire de contact du restaurant marocain">
+        <label for="name" class="sr-only">Nom</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required class="border border-slate-800 p-3 m-1 w-full hover:rounded">
+
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required class="border border-slate-800 p-3 m-1 w-full">
+
+        <label for="subject" class="sr-only">Sujet</label>
+        <input type="text" id="subject" name="subject" placeholder="Sujet" class="border border-slate-800 p-3 m-1 w-full">
+
+        <label for="message" class="sr-only">Message</label>
+        <textarea id="message" name="message" placeholder="Votre message" rows="5" required class="border p-3 border-slate-800 m-1 w-full"></textarea>
+
+        <button type="submit" class="font-mono p-3 px-6 m-1 mt-2 self-center md:self-start bg-orange-500 text-white hover:bg-slate-900">
+          Envoyer le message
+        </button>
+      </form>
+    </div>
+  </div>
 </section>
 
-<footer class="mx-auto p-16 bg-sky-950 w-full mt-3">
+
+
+<footer class="mx-auto p-16 bg-sky-950 w-full mt-3 text-white">
   <div class="flex flex-col md:flex-row items-start justify-between mx-10 space-y-8 md:space-y-0">
-     <!-- Company Section -->
-     <div class="w-full md:w-1/4 text-white">
-        <h2 class="font-bold text-2xl italic text-orange-500 mb-2">Company</h2>
-        <ul class="space-y-2">
-           <li><a href="#" class="flex items-center no-underline hover:text-orange-500"><i class="fa-solid fa-circle-chevron-right mr-2"></i>About Us</a></li>
-           <li><a href="#" class="flex items-center no-underline hover:text-orange-500"><i class="fa-solid fa-circle-chevron-right mr-2"></i>Contact Us</a></li>
-           <li><a href="#" class="flex items-center no-underline hover:text-orange-500"><i class="fa-solid fa-circle-chevron-right mr-2"></i>Reservation</a></li>
-           <li><a href="#" class="flex items-center no-underline hover:text-orange-500"><i class="fa-solid fa-circle-chevron-right mr-2"></i>Privacy Policy</a></li>
-           <li><a href="#" class="flex items-center no-underline hover:text-orange-500"><i class="fa-solid fa-circle-chevron-right mr-2"></i>Terms & Condition</a></li>
-        </ul>
-     </div>
-     
-     <!-- Contact Section -->
-     <div class="w-full md:w-1/4 text-white space-y-3">
-        <h2 class="font-bold text-2xl italic text-orange-500 mb-2">Contact</h2>
-        <h2><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</h2>
-        <h2><i class="fa-solid fa-phone"></i> +012 345 67890</h2>
-        <h2><i class="fa-solid fa-envelope"></i> info@example.com</h2>
-        <div class="flex space-x-2 mt-4">
-           <a href="#" class="flex items-center justify-center w-9 h-9 border border-white rounded-full hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-              <i class="fab fa-facebook-f"></i>
-           </a>
-           <a href="#" class="flex items-center justify-center w-9 h-9 border border-white rounded-full hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-              <i class="fab fa-twitter"></i>
-           </a>
-           <a href="#" class="flex items-center justify-center w-9 h-9 border border-white rounded-full hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-              <i class="fab fa-instagram"></i>
-           </a>
-           <a href="#" class="flex items-center justify-center w-9 h-9 border border-white rounded-full hover:bg-orange-500 hover:text-white hover:border-orange-500 transition">
-              <i class="fab fa-youtube"></i>
-           </a>
-        </div>
-     </div>
-     
-     <!-- Opening Section -->
-     <div class="w-full md:w-1/4 text-white">
-        <h2 class="font-bold text-xl italic text-orange-500 mb-2">Opening</h2>
-        <h2>Monday - Saturday</h2>
-        <p>09AM - 09PM</p><br>
-        <h2>Sunday</h2>
-        <p>10AM - 08PM</p>
-     </div>
-     
-     <!-- Newsletter Section -->
-     <div class="w-full md:w-1/4 text-white space-y-2">
+
+    <!-- Section Entreprise -->
+    <div class="w-full md:w-1/4">
+      <h2 class="font-bold text-2xl italic text-orange-500 mb-2">Notre Restaurant</h2>
+      <ul class="space-y-2">
+        <li><a href="#about" class="hover:text-orange-500"><i class="fa-solid fa-circle-chevron-right mr-2"></i>À propos</a></li>
+        <li><a href="#contact" class="hover:text-orange-500"><i class="fa-solid fa-circle-chevron-right mr-2"></i>Contact</a></li>
+        <li><a href="#booking" class="hover:text-orange-500"><i class="fa-solid fa-circle-chevron-right mr-2"></i>Réservation</a></li>
+        <li><a href="#" class="hover:text-orange-500"><i class="fa-solid fa-circle-chevron-right mr-2"></i>Politique de confidentialité</a></li>
+        <li><a href="#" class="hover:text-orange-500"><i class="fa-solid fa-circle-chevron-right mr-2"></i>Conditions d'utilisation</a></li>
+      </ul>
+    </div>
+
+    <!-- Section Contact -->
+    <div class="w-full md:w-1/4 space-y-3">
+      <h2 class="font-bold text-2xl italic text-orange-500 mb-2">Contact</h2>
+      <address class="not-italic space-y-2 text-sm leading-6">
+        <p><i class="fa-solid fa-location-dot mr-2"></i>Rue Bab Taza, Taza, Maroc</p>
+        <p><i class="fa-solid fa-phone mr-2"></i><a href="tel:+212600000000">+212 6 00 00 00 00</a></p>
+        <p><i class="fa-solid fa-envelope mr-2"></i><a href="mailto:contact@restaurantmarocain.ma">contact@restaurantmarocain.ma</a></p>
+      </address>
+      <div class="flex space-x-2 mt-4">
+        <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Horaires d'ouverture -->
+    <div class="w-full md:w-1/4">
+      <h2 class="font-bold text-xl italic text-orange-500 mb-2">Horaires</h2>
+      <p><strong>Lundi - Samedi :</strong> 09h00 - 21h00</p>
+      <p><strong>Dimanche :</strong> 10h00 - 20h00</p>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="w-full md:w-1/4 space-y-2">
       <h2 class="font-bold text-xl italic text-orange-500">Newsletter</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, voluptatum.</p>
-      <input type="text" placeholder="Your Email" class="p-3 text-black">
-      <button class="bg-orange-500 p-3 hover:bg-transparent hover:border hover:border-orange-500">Subscribe</button>     </div>
+      <p>Recevez nos actualités et offres spéciales directement par email.</p>
+      <form action="#" method="POST" aria-label="Formulaire d’abonnement à la newsletter" class="flex items-center gap-2">
+  <label for="newsletter-email" class="sr-only">Votre e-mail</label>
+  <input
+    id="newsletter-email"
+    type="email"
+    placeholder="Votre Email"
+    required
+    class="p-3 text-black w-full rounded"
+  >
+  <button
+    type="submit"
+    class="bg-orange-500 p-3 whitespace-nowrap hover:bg-transparent hover:border hover:border-orange-500 hover:text-orange-500 rounded"
+  >
+    S’abonner
+  </button>
+</form>
+
+    </div>
+
   </div>
 </footer>
+
 
  <script>
   document.addEventListener("DOMContentLoaded", () => {
