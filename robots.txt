@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://faizazn.github.io/restaurant/sitemap.xml
