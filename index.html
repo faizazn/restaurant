@@ -42,6 +42,7 @@
   <!-- CSS principal -->
   <link rel="stylesheet" href="dist/style.css">
 </head>
+<link rel="stylesheet" href="dist/style.css">
 <script>
   tailwind.config = {
     theme: {
@@ -49,7 +50,7 @@
     }
   }
 </script>
- <style>
+<style>
   /*home section*/
 /* Keyframes for fade-in-left animation */
 @keyframes fade-in-left {
@@ -173,6 +174,14 @@
   .whatsapp-icon {
     margin-top: 5px;
   }
+.logo-text {
+  font-size: 1.25rem; /* ou plus */
+  font-weight: 800;
+  font-style: italic;
+  background: linear-gradient(to right, #f97316, #ef4444, #f97316); /* orange-500 → red-500 → orange-500 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
  </style>
 <body>
@@ -181,9 +190,10 @@
     <!-- Logo -->
     <div class="flex items-center space-x-2">
   <img src="dist/images/logo.png" alt="Logo de Dar Taza" width="50">
-  <h1 class="text-xl font-extrabold italic bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 bg-clip-text text-transparent">
-    Dar Taza
-  </h1>
+  <span class="logo-text">
+  Dar Taza
+</span>
+
 </div>
 
     <!-- Menu Desktop -->
