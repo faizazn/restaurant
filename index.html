@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Titre principal (affiché dans Google et l’onglet du navigateur) -->
-  <title>Dar Taza - Restaurant Marocain à Taza</title>
-
+  <title>Restaurant Marocain à Taza - Dégustez nos plats traditionnels</title>
 
   <!-- Description SEO (150–160 caractères) -->
-  <meta name="description" content="Découvrez notre restaurant à Taza : spécialités marocaines, ambiance chaleureuse, réservation facile en ligne.">
+<meta name="description" content="Bienvenue chez Dar Taza, votre restaurant marocain à Taza. Plats traditionnels, ambiance chaleureuse, réservation facile.">
 
   <!-- (Facultatif) Mots-clés -->
   <meta name="keywords" content="restaurant marocain, Taza, plats traditionnels, couscous, tajine, réservation en ligne, cuisine marocaine">
@@ -204,7 +203,7 @@
       <a href="#services" class="text-white hover:text-orange-500">Services</a>
       <a href="#team" class="text-white hover:text-orange-500">Équipe</a>
       <a href="#menu" class="text-white hover:text-orange-500">Menu</a>
-      <a href="#reviews" class="text-white hover:text-orange-500">Avis</a>
+      <!--<a href="#reviews" class="text-white hover:text-orange-500">Avis</a>-->
       <a href="#contact" class="text-white hover:text-orange-500">Contact</a>
       <a href="#booking" class="bg-orange-500 text-white hover:bg-transparent hover:border hover:border-orange-500 py-2 px-6 rounded-full">Réserver une table</a>
     </div>
@@ -223,7 +222,7 @@
       <a href="#services" class="text-white hover:text-slate-500">Services</a>
       <a href="#team" class="text-white hover:text-slate-500">Équipe</a>
       <a href="#menu" class="text-white hover:text-slate-500">Menu</a>
-      <a href="#reviews" class="text-white hover:text-slate-500">Avis</a>
+      <!--<a href="#reviews" class="text-white hover:text-slate-500">Avis</a>-->
       <a href="#contact" class="text-white hover:text-slate-500">Contact</a>
       <a href="#booking" class="bg-orange-500 text-white hover:bg-transparent hover:border hover:border-orange-500 py-2 px-6 rounded-full">Réserver une table</a>
     </div>
@@ -238,17 +237,22 @@
   <!-- Overlay sombre -->
   <div class="absolute inset-0 bg-black/60 z-0"></div>
 
-  <div class="text-center space-x-4 mb-12 flex items-center justify-center mx-4 md:mx-36">
+  <div class="text-center mb-12 flex flex-col-reverse md:flex-row items-center justify-center mx-4 md:mx-36">
+
     <!-- Section Texte -->
     <div class="text flex flex-col justify-center space-y-5 py-8 text-center md:text-left md:w-1/2 text-slate-50 opacity-0 transition-transform transform translate-x-[-50px]" data-animation="fade-in-left">
-      <h1 class="font-bold text-3xl md:text-5xl font-mono">
-        Restaurant Marocain à Taza
-      </h1>
-      <h2 class="text-lg md:text-2xl font-mono text-orange-400">Saveurs authentiques & ambiance chaleureuse</h2>
+     <h1 class="font-bold text-2xl md:text-4xl font-mono text-orange-400 leading-tight tracking-tight">
+  Bienvenue chez <span style="text-shadow: 1px 1px 2px rgba(140, 41, 41, 0.3);" class="text-orange-500">Dar Taza</span>
+</h1>
+
+
+
+      <h2 class="text-lg md:text-3xl font-mono ">Restaurant marocain à Taza</h2>
 
       <p class="leading-7 font-mono">
-        Découvrez des plats marocains authentiques préparés avec passion et des ingrédients frais. Une expérience culinaire inoubliable vous attend dans notre restaurant.
-      </p>
+  Découvrez les spécialités marocaines de <strong>Dar Taza</strong>, préparées avec passion et des ingrédients frais. Une expérience culinaire inoubliable vous attend dans notre restaurant à Taza.
+</p>
+
       <a href="#" class="font-mono py-2 px-6 rounded-full self-center md:self-start bg-orange-500 text-white hover:bg-transparent hover:border hover:border-orange-500">
         Réserver une table
       </a>
@@ -256,13 +260,14 @@
 
     <!-- Section Image -->
     <div class="image md:w-1/2 animate-spin">
-      <img src="dist/images/home.png" alt="Plat traditionnel marocain - tagine" />
+      <img src="dist/images/home.png" alt="Plats traditionnels marocains chez Dar Taza à Taza" />
+
     </div>
   </div>
 </section>
     
     <section id="about" class="my-10">
-  <div class="text-center space-x-4 mb-12 flex items-center justify-center mx-4 md:mx-36">
+  <div class="text-center space-x-4 mb-12 flex flex-col-reverse md:flex-row items-center justify-center mx-4 md:mx-36">
     
     <!-- Galerie d'images -->
     <div class="image grid grid-cols-2 gap-4 md:w-1/2">
@@ -460,7 +465,7 @@
   </div>
 </section>
 
-    <section class="py-8 mb-8 mt-8" id="reviews">
+    <!--<section class="py-8 mb-8 mt-8" id="reviews">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-center space-x-4">
             <hr class="flex-grow border-t-2 border-orange-500">
@@ -469,9 +474,9 @@
           </div>
           <br>
           <div class="mb-14 flex flex-col justify-center items-center sm:flex-row sm:items-center sm:justify-between max-sm:gap-8">
-              <!-- Slider controls--> 
+             
               <div class="flex items-center gap-8">
-                <!-- Left Button -->
+                
                 <button id="slider-button-left"
                     class="swiper-button-prev group flex justify-center items-center w-12 h-12 border-2 border-orange-500 rounded-full transition-all duration-300 hover:bg-orange-500 relative">
                     <svg class="h-6 w-6 text-orange-500 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -480,7 +485,7 @@
                             d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
-                <!-- Right Button -->
+                
                 <button id="slider-button-right"
                     class="swiper-button-next group flex justify-center items-center w-12 h-12 border-2 border-orange-500 rounded-full transition-all duration-300 hover:bg-orange-500 relative">
                     <svg class="h-6 w-6 text-orange-500 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -492,7 +497,7 @@
             </div>
             
           </div>
-          <!--Slider wrapper-->
+          
           <div class="lg:flex grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-8 swiper mySwiper">
               <div class="swiper-wrapper">
                   <div
@@ -764,7 +769,7 @@
               </div>
           </div>
       </div>
-  </section>
+  </section>-->
   <section id="menu" class="flex justify-center items-center flex-col space-y-8 w-full">
   <div class="container flex items-center justify-center space-x-4 w-full">
     <hr class="flex-grow border-t-2 border-orange-500">
